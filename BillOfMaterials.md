@@ -2,3 +2,7 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
+|M4 7mm Spacer|1|$1.39|https://www.mcmaster.com/92871a308|
+|Total: |1|$1.39| |
+
+ 3xCOG MSRP: $4.17

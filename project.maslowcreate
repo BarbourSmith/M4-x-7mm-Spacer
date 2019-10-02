@@ -10,6 +10,68 @@
             "topLevel": true,
             "allAtoms": [
                 {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 357,
+                    "y": 116,
+                    "uniqueID": 151527,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 4.2
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 365,
+                    "y": 191,
+                    "uniqueID": 647845,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 6
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Difference",
+                    "name": "Difference",
+                    "x": 496,
+                    "y": 140,
+                    "uniqueID": 613794,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 632,
+                    "y": 143,
+                    "uniqueID": 183726,
+                    "ioValues": [
+                        {
+                            "name": "height",
+                            "ioValue": 7
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Add BOM Tag",
+                    "name": "Add BOM Tag",
+                    "x": 851,
+                    "y": 145,
+                    "uniqueID": 232516,
+                    "ioValues": [],
+                    "BOMitem": {
+                        "BOMitemName": "M4 7mm Spacer",
+                        "numberNeeded": 1,
+                        "costUSD": 1.39,
+                        "source": "https://www.mcmaster.com/92871a308",
+                        "totalNeeded": 0
+                    }
+                },
+                {
                     "atomType": "Output",
                     "name": "Output",
                     "x": 1316,
@@ -17,7 +79,37 @@
                     "ioValues": []
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry2",
+                    "ap1ID": 151527,
+                    "ap2ID": 613794
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry1",
+                    "ap1ID": 647845,
+                    "ap2ID": 613794
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": 613794,
+                    "ap2ID": 183726
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": 183726,
+                    "ap2ID": 232516
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap1ID": 232516
+                }
+            ],
             "fileTypeVersion": 1
         }
     ],
